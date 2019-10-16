@@ -1,10 +1,9 @@
 // Server Node.js 
 
-var express = require('express');//abilita express
-var http = require('http');//abilita http
-var path = require('path');//abilita path
-var port = process.env.PORT || 3000;
-var app = express();
+const express = require('express');//abilita express
+const path = require('path');//abilita path
+const port = process.env.PORT || 8080;
+const app = express();
 
 // Imposta la struttura delle cartelle
 app.use(function(req, res, next) {
@@ -18,6 +17,6 @@ app.get('/', (req, res,next) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 });
   
-  var server = http.createServer(app);
+  const server = http.createServer(app);
 server.listen(port);
 console.log("Il criceto gira sulla porta " + port);
