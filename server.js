@@ -1,8 +1,8 @@
 // Server Node.js 
 
-var express = require('express');//abilita express
-var path = require('path');//abilita path
-var http = require('http'); //abilita http
+var express = require('express');
+var path = require('path');
+var http = require('http');
 var port = process.env.PORT || 3000;
 var app = express();
 
