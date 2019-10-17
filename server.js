@@ -9,7 +9,7 @@ var app = express();
 
 // Imposta la struttura delle cartelle
 app.use(express.static(__dirname + '/public'));
-app.use(cors({ origin: 'https://bookymgunimi.netsons.org/xample.com' }));
+app.use(cors({ origin: 'https://bookymgunimi.netsons.org' }));
 
 // imposta la route
 app.get('/', (req, res,next) => {
