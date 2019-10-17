@@ -8,7 +8,7 @@ app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   next();
 });
-app.use(express.static(__dirname + '/public'));
+app.use('/books-download', express.static(__dirname + '/public'));
 // imposta la route
 app.get('*', (req, res,next) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
