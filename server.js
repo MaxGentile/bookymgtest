@@ -2,7 +2,7 @@
 
 var express = require('express');//abilita express
 var path = require('path');//abilita path
-var http = require('http');
+var http = require('http'); //abilita http
 var port = process.env.PORT || 3000;
 var app = express();
 
